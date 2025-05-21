@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".Calendar"
+    tools:visibility="visible">
+
+    <ImageView
+        android:id="@+id/calendarPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/calendar" />
+
+    <ImageButton
+        android:id="@+id/notesButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="216dp"
+        android:backgroundTint="#FFFFFF"
+        android:filterTouchesWhenObscured="false"
+        android:foregroundTint="#AB1717"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/calendarButton"
+        app:layout_constraintEnd_toStartOf="@+id/settingButton"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/calendarButton"
+        app:layout_constraintVertical_bias="0.00999999"
+        app:srcCompat="@drawable/coloured_notes" />
+
+    <ImageButton
+        android:id="@+id/settingButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#FFFFFF"
+        android:filterTouchesWhenObscured="false"
+        android:foregroundTint="#AB1717"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/notesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/notesButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/coloured_gear" />
+
+    <ImageButton
+        android:id="@+id/calendarButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="#E0E0E0"
+        android:backgroundTint="#FFE082"
+        android:filterTouchesWhenObscured="false"
+        android:foregroundTint="#AB1717"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/homeButton"
+        app:layout_constraintVertical_bias="0.00999999"
+        app:srcCompat="@drawable/date_button" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#FFFFFF"
+        android:filterTouchesWhenObscured="false"
+        android:foregroundTint="#AB1717"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        app:srcCompat="@drawable/coloured_home" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

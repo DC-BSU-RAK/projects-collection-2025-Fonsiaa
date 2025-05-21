@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/homePage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/homepage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#EF9A9A"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/homePage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973"
+        app:srcCompat="@drawable/home_button" />
+
+    <ImageButton
+        android:id="@+id/calendarButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#FFFFFF"
+        android:filterTouchesWhenObscured="false"
+        android:foregroundTint="#AB1717"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/homeButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.37"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/homeButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/coloured_dates" />
+
+    <ImageButton
+        android:id="@+id/notesButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#FFFFFF"
+        android:filterTouchesWhenObscured="false"
+        android:foregroundTint="#AB1717"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/calendarButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/calendarButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/coloured_notes" />
+
+    <ImageButton
+        android:id="@+id/settingButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:filterTouchesWhenObscured="false"
+        android:foregroundTint="#AB1717"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/notesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/notesButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/coloured_gear" />
+
+
+    <TextView
+        android:id="@+id/quoteText"
+        android:layout_width="304dp"
+        android:layout_height="142dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/adlam_display"
+        android:foregroundTint="#FFFFFF"
+        android:text="“One step takes a long way‶"
+        android:textColor="#815F5F"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/homePage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="344dp"
+        android:layout_height="66dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/adlam_display"
+        android:foregroundTint="#FFFFFF"
+        android:text="Guest"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/homePage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186" />
+
+    <ImageButton
+        android:id="@+id/generateButton"
+        android:layout_width="138dp"
+        android:layout_height="116dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quoteText"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/generate_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

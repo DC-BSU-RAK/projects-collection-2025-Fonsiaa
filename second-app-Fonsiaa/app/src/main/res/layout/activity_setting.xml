@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1802828"
+    android:backgroundTint="#9DFFFFFF"
+    tools:context=".SettingPage">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/settingPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/setting"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/profileText"
+        android:layout_width="81dp"
+        android:layout_height="34dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/adlam_display"
+        android:foregroundTint="#FFFFFF"
+        android:text="Profile"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.20999998" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="99dp"
+        android:layout_height="33dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/adlam_display"
+        android:foregroundTint="#FFFFFF"
+        android:text="Name"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:ems="10"
+        android:fontFamily="@font/adlam_display"
+        android:hint="type here"
+        android:inputType="text"
+        android:textColorHint="#95BACF"
+        app:layout_constraintBottom_toBottomOf="@+id/userName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.737"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userName" />
+
+    <ImageButton
+        android:id="@+id/notesButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#FFFFFF"
+        android:filterTouchesWhenObscured="false"
+        android:foregroundTint="#AB1717"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/calendarButton"
+        app:layout_constraintEnd_toStartOf="@+id/settingButton"
+        app:layout_constraintHorizontal_bias="0.864"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
+        app:layout_constraintTop_toTopOf="@+id/calendarButton"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/coloured_notes" />
+
+    <ImageButton
+        android:id="@+id/settingButton"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#427AED"
+        android:filterTouchesWhenObscured="false"
+        android:foregroundTint="#AB1717"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/notesButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.907"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/notesButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/gear_button" />
+
+    <ImageButton
+        android:id="@+id/calendarButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:filterTouchesWhenObscured="false"
+        android:foregroundTint="#AB1717"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/homeButton"
+        app:layout_constraintEnd_toStartOf="@+id/notesButton"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toEndOf="@+id/homeButton"
+        app:layout_constraintTop_toTopOf="@+id/homeButton"
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@drawable/coloured_dates" />
+
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:backgroundTint="#FFFFFF"
+        android:filterTouchesWhenObscured="false"
+        android:foregroundTint="#AB1717"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:srcCompat="@drawable/coloured_home" />
+
+    <ImageButton
+        android:id="@+id/saveButton"
+        android:layout_width="117dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputText"
+        app:layout_constraintVertical_bias="0.112"
+        app:srcCompat="@drawable/save_button" />
+
+    <ImageButton
+        android:id="@+id/profileButton"
+        android:layout_width="158dp"
+        android:layout_height="170dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/settingPage"
+        app:layout_constraintVertical_bias="0.683"
+        app:srcCompat="@drawable/profile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
